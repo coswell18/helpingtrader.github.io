@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Page Not Found</title>
+  <script type="text/javascript">
+    // Redirect all requests to index.html except actual files and directories
+    var path = window.location.pathname;
+    var isFile = path.match(/\.[a-zA-Z]+$/);
+    if (!isFile) {
+      window.location.href = "/";
+    }
+  </script>
+</head>
+<body>
+</body>
+</html>
